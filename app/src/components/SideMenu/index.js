@@ -1,10 +1,14 @@
 import React from "react";
 import './SideMenu.css';
 import NavButton from "../NavButton";
+import UserMenu from "../UserMenu";
 
 const SideMenu = () => (
     <>
     <nav className="App-nav">
+        <h2>Menu</h2>
+        <UserMenu />
+        
         <h2>Navigation</h2>
         <NavButton>Home</NavButton>
         <NavButton>Search</NavButton>

@@ -43,3 +43,62 @@
   flex: 1;
   min-height: 100vh;
 }
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.login-page h1 {
+  margin-bottom: 10px;
+}
+
+.login-page p {
+  margin-bottom: 20px;
+}
+
+/* Styles for Login component */
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.login-page label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.login-page input[type="text"], .login-page input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.login-page input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
+.login-page input[type="submit"]:hover {
+  background-color: #0056b3;
+}

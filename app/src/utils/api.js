@@ -1,4 +1,4 @@
-async function apiCall(url, method = "GET", body = null)
+async function apiCall(url, method = "GET", body = null, authToken = null)
 {
     const options = {
         method: method,
@@ -6,6 +6,11 @@ async function apiCall(url, method = "GET", body = null)
             "Content-Type": "application/json"
         }
     };
+
+    if(authToken)
+    {
+        options.headers['Authorization'] = `Bearer ${authToken}`;
+    }
 
     if (body)
     {
