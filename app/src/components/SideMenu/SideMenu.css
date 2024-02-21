@@ -1,0 +1,8 @@
+.App-nav {
+    background-color: #ddd;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
