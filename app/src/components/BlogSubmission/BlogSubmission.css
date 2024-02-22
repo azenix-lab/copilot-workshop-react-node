@@ -1,0 +1,33 @@
+.blog-submission-form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-left: 0
+}
+
+.blog-submission-form label {
+    text-align: left;
+}
+
+.blog-submission-form input {
+    margin-bottom: 10px;
+    width:200px;
+    text-align: left;
+}
+
+.blog-submission-form textarea {
+    resize: none;
+    max-width: 800px;
+    min-width: 400px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.blog-submission-form label:last-child {
+    flex: 1;
+}
+
+.blog-submission-form button {
+    width: 100px;
+}
