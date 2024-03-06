@@ -12,7 +12,6 @@ export const BlogReaderPage = () => {
         const fetchBlog = async () => {
             const response = await apiCall(`http://localhost:3001/api/blog/${id}`, 'GET');
             const data = await response.blog
-            console.log(data);
             setBlog(data);
         };
         fetchBlog();

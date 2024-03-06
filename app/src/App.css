@@ -112,3 +112,17 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
+
+.blog-table {
+  margin: 0 auto; /* Center the table horizontally */
+  width: 80%; /* Set the width of the table */
+}
+
+.blog-table th:nth-child(1) {
+  width: 60%; /* Give more room for the blog title */
+}
+
+.blog-table th:nth-child(2),
+.blog-table th:nth-child(3) {
+  width: 20%; /* Set the width of the other columns */
+}

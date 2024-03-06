@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import React, { useState, useEffect } from "react";
 
 function BlogList() {
@@ -13,17 +15,29 @@ function BlogList() {
     }, []);
 
     return (
-        <div>
-            <h1>Blog Posts</h1>
-            {blogPosts.map((post) => {
-                return (
-                    <div key={post.id}>
-                        <h2>{post.title}</h2>
-                        <p>{post.content}</p>
-                    </div>
-                );
-            })}
-        </div>
+<div>
+    <h1>Blog Posts</h1>
+    {blogPosts && 
+        <table className="blog-table">
+            <thead>
+                <tr>
+                    <th>Blog Title</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                {blogPosts.map((post, index) => {
+                    return (
+                        <tr key={post.id || index}>
+                            <td>{post.title}</td>
+                            <td><Link to={`/blog/${post.id}`}>Read</Link></td>
+                        </tr>
+                    );
+                })}
+            </tbody>
+        </table>
+    }
+</div>
     );
 }
 
